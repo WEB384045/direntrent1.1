@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+  // Your Firebase config object (get this from your Firebase project settings)
+  const firebaseConfig = {
+    apiKey: "AIzaSyCRAA8SinlHZ1OjtjFIx7oL8eNhgl13Q2Y",
+    authDomain: "directrent11.firebaseapp.com",
+    projectId: "directrent11",
+    storageBucket: "directrent11.firebasestorage.app",
+    messagingSenderId: "1099493890256",
+    appId: "1:1099493890256:web:90b7c5b76dd40e0a4766d5"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DirectRent - Tenant to Owner Platform</title>
